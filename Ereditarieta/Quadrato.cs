@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Ereditarieta
 {
-    public class Quadrato: Rettangolo, Forma
+    public class Quadrato: Rettangolo
     {
         public override double Area(double altezza, double lato)
         {

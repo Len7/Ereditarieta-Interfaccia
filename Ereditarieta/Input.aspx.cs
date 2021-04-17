@@ -22,12 +22,9 @@ namespace Ereditarieta
         protected void Cerchio_Click(object sender, EventArgs e)
         {
             Cerchio cerchio = new Cerchio();
-            cerchio.r = Convert.ToDouble(Raggio.Text);
 
-            double a = cerchio.r;
-
-            Visualliza1.Text = "Area del cerchio " + cerchio.Area(a, Convert.ToDouble(Lato.Text));
-            Visualliza2.Text = "Perimetro del cerchio " + cerchio.Perimetro(a, Convert.ToDouble(Lato.Text));
+            Visualliza1.Text = "Area del cerchio " + cerchio.Area(Convert.ToDouble(Raggio.Text));
+            Visualliza2.Text = "Perimetro del cerchio " + cerchio.Perimetro(Convert.ToDouble(Raggio.Text));
         }
 
         protected void Rettangolo_Click(object sender, EventArgs e)
